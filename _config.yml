@@ -1,0 +1,48 @@
+title: "Islamic Passport"
+subtitle: "Sistema de Identificação e Autenticação de Mulçumanos e Entidades Islamicas"
+description: >-
+  Plataforma oficial de identificação e autenticação para a comunidade islâmica global,
+  promovendo conexões seguras entre fiéis e entidades reconhecidas.
+url: ""
+baseurl: ""
+permalink: pretty
+lang: pt-BR
+timezone: America/Fortaleza
+markdown: kramdown
+kramdown:
+  input: GFM
+sass:
+  style: compressed
+collections:
+  news:
+    output: true
+    permalink: /news/:name/
+  releases:
+    output: true
+    permalink: /releases/:name/
+  entities:
+    output: true
+    permalink: /entities/:name/
+defaults:
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: item
+      section_title: "Notícias"
+  - scope:
+      path: ""
+      type: "releases"
+    values:
+      layout: item
+      section_title: "Lançamentos"
+  - scope:
+      path: ""
+      type: "entities"
+    values:
+      layout: item
+      section_title: "Entidades"
+plugins:
+  - jekyll-feed
+feed:
+  path: feed.xml

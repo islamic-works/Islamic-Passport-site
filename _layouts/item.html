@@ -1,0 +1,68 @@
+---
+---
+{% capture page_title %}{{ page.title | default: site.title }}{% endcapture %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page_title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: page.description | default: site.description }}" />
+  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link rel="apple-touch-icon" href="{{ '/favicon-64.png' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="branding">
+        <div class="logo-mark">📘</div>
+        <div>
+          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+          <p class="site-subtitle">{{ site.subtitle }}</p>
+        </div>
+      </div>
+      <nav class="site-nav">
+        <a href="{{ '/' | relative_url }}#noticias">Notícias</a>
+        <a href="{{ '/' | relative_url }}#lancamentos">Lançamentos</a>
+        <a href="{{ '/' | relative_url }}#entidades">Entidades</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <article class="container reading">
+      <div class="item-header">
+        <h1>{{ page_title }}</h1>
+        {% if page.date %}
+          <p class="meta">Publicado em {{ page.date | date: "%d %B %Y" }}</p>
+        {% endif %}
+        {% if page.location %}
+          <p class="meta">{{ page.location }}</p>
+        {% endif %}
+      </div>
+      <div class="item-content">
+        {{ content }}
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-branding">
+        <span class="footer-logo">📘</span>
+        <div>
+          <p>{{ site.title }}</p>
+          <p>Empreendimento Rapport</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="https://islamic-works.github.io" target="_blank" rel="noopener">Islamic Works</a>
+        <a href="https://rapport.tec.br" target="_blank" rel="noopener">Rapport</a>
+        <a href="https://wa.me/5585985205490" target="_blank" rel="noopener">WhatsApp: Carlos Delfino</a>
+        <a href="mailto:admin@rapport.tec.br">admin@rapport.tec.br</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
