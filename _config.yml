@@ -46,3 +46,4 @@ plugins:
   - jekyll-feed
 feed:
   path: feed.xml
+exclude: ["_site", "_config.yml", "Gemfile", "Gemfile.lock", ".gitignore", ".github"]  
