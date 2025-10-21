@@ -15,7 +15,10 @@
   <main class="site-main">
     {% assign display_name = page.socialName | default: page.title %}
     {% assign legal_name = page.legalName | default: page.title %}
-    {% assign show_legal = page.socialName and page.legalName and page.socialName != page.legalName %}
+    {% assign show_legal = false %}
+    {% if page.socialName and page.legalName and page.socialName != page.legalName %}
+      {% assign show_legal = true %}
+    {% endif %}
 
     <article class="container reading">
       <div class="item-header">

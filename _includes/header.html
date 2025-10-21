@@ -7,8 +7,16 @@
         <p class="site-subtitle">{{ site.subtitle }}</p>
       </div>
     </div>
-    <nav class="site-nav">
-      <ul class="nav-menu">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+      <span class="sr-only">Alternar navegação</span>
+      <span class="nav-toggle-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+    <nav class="site-nav" aria-label="Menu principal">
+      <ul class="nav-menu" id="primary-menu">
         <li class="nav-item">
           <a class="nav-link" href="{{ '/' | relative_url }}">Início</a>
         </li>
@@ -42,3 +50,19 @@
     </nav>
   </div>
 </header>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const navToggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".site-nav");
+
+    if (!navToggle || !nav) {
+      return;
+    }
+
+    navToggle.addEventListener("click", function () {
+      const isExpanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!isExpanded));
+      nav.classList.toggle("is-open", !isExpanded);
+    });
+  });
+</script>
