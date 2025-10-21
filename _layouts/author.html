@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: site.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.summary | default: page.description | default: site.description }}" />
+  <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}" />
+  <link rel="apple-touch-icon" href="{{ '/favicon-64.png' | relative_url }}" />
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+</head>
+<body>
+  {% include header.html %}
+
+  <main class="site-main">
+    {% assign display_name = page.socialName | default: page.title %}
+    {% assign legal_name = page.legalName | default: page.title %}
+    {% assign show_legal = page.socialName and page.legalName and page.socialName != page.legalName %}
+
+    <article class="container reading">
+      <div class="item-header">
+        <h1>{{ display_name }}</h1>
+        {% if show_legal %}
+          <p class="meta">Nome oficial: {{ legal_name }}</p>
+        {% endif %}
+        {% if page.role %}
+          <p class="meta">{{ page.role }}</p>
+        {% endif %}
+      </div>
+      <div class="item-content">
+        {% if page.description %}
+          <p>{{ page.description }}</p>
+        {% endif %}
+
+        {{ content }}
+
+        <section class="contact">
+          {% if page.email %}
+            <p><strong>E-mail:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+          {% endif %}
+          {% if page.whatsapp %}
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/{{ page.whatsapp | replace: '+', '' | replace: ' ', '' }}" target="_blank" rel="noopener">{{ page.whatsapp }}</a></p>
+          {% elsif page.whatsapp_note %}
+            <p><strong>WhatsApp:</strong> {{ page.whatsapp_note }}</p>
+          {% endif %}
+        </section>
+
+        {% if page.social and page.social.size > 0 %}
+          <section class="social">
+            <h2>Redes sociais</h2>
+            <ul>
+              {% for profile in page.social %}
+                <li><a href="{{ profile.url }}" target="_blank" rel="noopener">{{ profile.label }}</a></li>
+              {% endfor %}
+            </ul>
+          </section>
+        {% endif %}
+      </div>
+    </article>
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

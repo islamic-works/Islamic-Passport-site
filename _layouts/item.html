@@ -22,6 +22,23 @@
         {% if page.date %}
           <p class="meta">Publicado em {{ page.date | date: "%d %B %Y" }}</p>
         {% endif %}
+        {% if page.authors %}
+          <p class="meta">
+            {% if page.authors.size > 1 %}
+              Autores:
+            {% else %}
+              Autor:
+            {% endif %}
+            {% for author_slug in page.authors %}
+              {% assign author = site.staff | where: "identifier", author_slug | first %}
+              {% if author %}
+                <a href="{{ author.url | relative_url }}">{{ author.title }}</a>{% unless forloop.last %}, {% endunless %}
+              {% else %}
+                {{ author_slug }}{% unless forloop.last %}, {% endunless %}
+              {% endif %}
+            {% endfor %}
+          </p>
+        {% endif %}
         {% if page.location %}
           <p class="meta">{{ page.location }}</p>
         {% endif %}

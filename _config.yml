@@ -23,6 +23,9 @@ collections:
   entities:
     output: true
     permalink: /entities/:name/
+  staff:
+    output: true
+    permalink: /staff/:name/
 defaults:
   - scope:
       path: ""
@@ -42,6 +45,12 @@ defaults:
     values:
       layout: item
       section_title: "Entidades"
+  - scope:
+      path: ""
+      type: "staff"
+    values:
+      layout: author
+      section_title: "Equipe"
 plugins:
   - jekyll-feed
 feed:
