@@ -10,71 +10,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="branding">
-        <div class="logo-mark">📘</div>
-        <div>
-          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-          <p class="site-subtitle">{{ site.subtitle }}</p>
-        </div>
-      </div>
-      <nav class="site-nav">
-        <ul class="nav-menu">
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}">Início</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}#noticias">Notícias</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}#lancamentos">Lançamentos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ '/' | relative_url }}#entidades">Entidades</a>
-          </li>
-          {% assign menu_pages = site.pages | where_exp: 'page', 'page.menu_header' %}
-          {% assign top_level = menu_pages | where_exp: 'page', 'page.submenu_header == nil or page.submenu_header == ""' | sort: 'menu_header' %}
-          {% for parent in top_level %}
-            {% assign submenu = menu_pages | where: 'submenu_header', parent.menu_header | sort: 'menu_header' %}
-            <li class="nav-item{% if submenu.size > 0 %} has-submenu{% endif %}">
-              <a class="nav-link" href="{{ parent.url | relative_url }}">{{ parent.menu_header }}</a>
-              {% if submenu.size > 0 %}
-                <ul class="submenu">
-                  {% for child in submenu %}
-                    <li class="submenu-item">
-                      <a class="submenu-link" href="{{ child.url | relative_url }}">{{ child.menu_header }}</a>
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main class="site-main">
     {{ content }}
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-branding">
-        <span class="footer-logo">📘</span>
-        <div>
-          <p>{{ site.title }}</p>
-          <p>Empreendimento Rapport</p>
-        </div>
-      </div>
-      <div class="footer-links">
-        <a href="https://islamic-works.github.io" target="_blank" rel="noopener">Islamic Works</a>
-        <a href="https://rapport.tec.br" target="_blank" rel="noopener">Rapport</a>
-        <a href="https://wa.me/5585985205490" target="_blank" rel="noopener">WhatsApp: Carlos Delfino</a>
-        <a href="mailto:admin@rapport.tec.br">admin@rapport.tec.br</a>
-      </div>
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>

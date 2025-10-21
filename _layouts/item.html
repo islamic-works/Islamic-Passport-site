@@ -13,22 +13,7 @@
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <div class="branding">
-        <div class="logo-mark">📘</div>
-        <div>
-          <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-          <p class="site-subtitle">{{ site.subtitle }}</p>
-        </div>
-      </div>
-      <nav class="site-nav">
-        <a href="{{ '/' | relative_url }}#noticias">Notícias</a>
-        <a href="{{ '/' | relative_url }}#lancamentos">Lançamentos</a>
-        <a href="{{ '/' | relative_url }}#entidades">Entidades</a>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main class="site-main">
     <article class="container reading">
@@ -47,22 +32,6 @@
     </article>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-branding">
-        <span class="footer-logo">📘</span>
-        <div>
-          <p>{{ site.title }}</p>
-          <p>Empreendimento Rapport</p>
-        </div>
-      </div>
-      <div class="footer-links">
-        <a href="https://islamic-works.github.io" target="_blank" rel="noopener">Islamic Works</a>
-        <a href="https://rapport.tec.br" target="_blank" rel="noopener">Rapport</a>
-        <a href="https://wa.me/5585985205490" target="_blank" rel="noopener">WhatsApp: Carlos Delfino</a>
-        <a href="mailto:admin@rapport.tec.br">admin@rapport.tec.br</a>
-      </div>
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>
