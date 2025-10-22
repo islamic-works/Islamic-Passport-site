@@ -473,16 +473,23 @@ a {
 
   .container {
     display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+
+  .footer-top {
+    display: flex;
     flex-wrap: wrap;
+    gap: 2.5rem;
     justify-content: space-between;
-    gap: 1.5rem;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .footer-branding {
     display: flex;
     gap: 1rem;
     align-items: center;
+    min-width: 220px;
 
     .footer-logo {
       font-size: 1.6rem;
@@ -496,10 +503,33 @@ a {
     }
   }
 
-  .footer-links {
+  .footer-columns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 2rem;
+    flex: 1;
+  }
+
+  .footer-column {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1.2rem;
+    flex-direction: column;
+    gap: 0.8rem;
+    min-width: 180px;
+  }
+
+  .footer-column-title {
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.02em;
+  }
+
+  .footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
 
     a {
       color: rgba(255, 255, 255, 0.8);
@@ -507,6 +537,25 @@ a {
       &:hover,
       &:focus {
         color: #fff;
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    padding-top: 1.5rem;
+    text-align: center;
+
+    p {
+      margin: 0;
+
+      a {
+        color: #fff;
+
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
       }
     }
   }
@@ -615,19 +664,102 @@ a {
     }
   }
 
-  .site-footer .container {
-    justify-content: center;
+  .site-footer .footer-top {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
-  .site-footer .footer-links {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+  .site-footer .footer-branding {
+    justify-content: center;
+  }
 
-    a {
-      width: 100%;
-      padding: 0.6rem 0;
+  .site-footer .footer-columns {
+    width: 100%;
+  }
+
+  .site-footer .footer-links a {
+    width: 100%;
+    padding: 0.6rem 0;
+  }
+}
+
+.archive {
+  background: rgba(11, 93, 63, 0.05);
+
+  .archive-intro {
+    margin-bottom: 2.5rem;
+
+    h1 {
+      margin-bottom: 0.6rem;
+      color: $primary-dark;
     }
+
+    p {
+      color: $muted-color;
+      margin: 0;
+    }
+  }
+
+  .archive-groups {
+    display: grid;
+    gap: 2.5rem;
+  }
+
+  .archive-group {
+    background: #fff;
+    border-radius: $border-radius;
+    border: 1px solid rgba(196, 163, 90, 0.15);
+    box-shadow: $soft-shadow;
+    padding: 1.8rem;
+
+    h2 {
+      margin-top: 0;
+      color: $primary-dark;
+    }
+  }
+
+  .archive-list {
+    list-style: none;
+    margin: 1.5rem 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .archive-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    .archive-item-title {
+      font-weight: 600;
+      color: $primary-dark;
+
+      a {
+        color: inherit;
+
+        &:hover,
+        &:focus {
+          color: $accent-color;
+        }
+      }
+    }
+
+    .archive-meta {
+      font-size: 0.9rem;
+      color: $muted-color;
+    }
+
+    .archive-summary {
+      margin: 0;
+      color: $text-color;
+    }
+  }
+
+  .archive-empty {
+    color: $muted-color;
+    margin: 1.5rem 0 0;
   }
 }

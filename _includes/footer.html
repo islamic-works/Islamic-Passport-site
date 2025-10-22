@@ -1,18 +1,42 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-branding">
-      <span class="footer-logo">📘</span>
-      <div>
-        <p>{{ site.title }}</p>
-        <p><a href="https://rapport.tec.br" target="_blank" rel="noopener">Empreendimento Rapport</a></p>
+    <div class="footer-top">
+      <div class="footer-branding">
+        <span class="footer-logo">📘</span>
+        <div>
+          <p>{{ site.title }}</p>
+          <p><a href="https://rapport.tec.br" target="_blank" rel="noopener">Empreendimento Rapport</a></p>
+        </div>
+      </div>
+      <div class="footer-columns">
+        <div class="footer-column">
+          <span class="footer-column-title">Institucional</span>
+          <ul class="footer-links">
+            <li><a href="https://islamic-works.github.io" target="_blank" rel="noopener">Islamic Works</a></li>
+            <li><a href="https://rapport.tec.br" target="_blank" rel="noopener">Rapport</a></li>
+            <li><a href="{{ '/staff/' | relative_url }}">Equipe</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <span class="footer-column-title">Recursos</span>
+          <ul class="footer-links">
+            <li><a href="{{ '/arquivo/' | relative_url }}">Arquivo de Publicações</a></li>
+            <li><a href="{{ '/#noticias' | relative_url }}">Notícias</a></li>
+            <li><a href="{{ '/#lancamentos' | relative_url }}">Lançamentos</a></li>
+            <li><a href="{{ '/#entidades' | relative_url }}">Entidades</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <span class="footer-column-title">Contato</span>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/5585985205490" target="_blank" rel="noopener">WhatsApp: Carlos Delfino</a></li>
+            <li><a href="mailto:admin@rapport.tec.br">admin@rapport.tec.br</a></li>
+          </ul>
+        </div>
       </div>
     </div>
-    <div class="footer-links">
-      <a href="https://islamic-works.github.io" target="_blank" rel="noopener">Islamic Works</a>
-      <a href="https://rapport.tec.br" target="_blank" rel="noopener">Rapport</a>
-      <a href="https://wa.me/5585985205490" target="_blank" rel="noopener">WhatsApp: Carlos Delfino</a>
-      <a href="mailto:admin@rapport.tec.br">admin@rapport.tec.br</a>
-      <a href="{{ '/staff/' | relative_url }}">Equipe</a>
+    <div class="footer-bottom">
+      <p>© {{ site.time | date: "%Y" }} <a href="https://rapport.tec.br" target="_blank" rel="noopener">Rapport Tecnologia</a>. Todos os direitos reservados.</p>
     </div>
   </div>
 </footer>
