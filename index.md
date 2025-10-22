@@ -12,8 +12,7 @@ title: Islamic Passport
     </div>
     <div class="hero-illustration" aria-hidden="true">
       <div class="passport-card">
-        <span class="passport-icon">📘</span>
-        <p>Identidade Islâmica</p>
+        <img src="{{ '/imgs/passport-card-640x427.png' | relative_url }}" alt="Identidade Islâmica" />
       </div>
     </div>
   </div>

@@ -74,12 +74,17 @@ a {
       width: 54px;
       height: 54px;
       border-radius: 14px;
-      background: rgba(255, 255, 255, 0.1);
+      box-shadow: $soft-shadow;
+      overflow: hidden;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.8rem;
-      box-shadow: $soft-shadow;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     .site-title {
@@ -304,20 +309,19 @@ a {
     .passport-card {
       width: 220px;
       height: 320px;
-      background: linear-gradient(160deg, $primary-color, $primary-dark);
-      color: #fff;
       border-radius: 28px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
       box-shadow: 0 25px 60px rgba(7, 54, 38, 0.25);
       border: 1px solid rgba(196, 163, 90, 0.4);
-    }
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
-    .passport-icon {
-      font-size: 3rem;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
   }
 }
