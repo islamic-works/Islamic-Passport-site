@@ -6,6 +6,7 @@ identifier: carlos-delfino
 role: "Gestor de Projeto, Fullstack Developer e Especialista em Sistemas Embarcados e AIoT"
 email: "consultoria@carlosdelfino.eti.br"
 description: "Responsável pela gestão do projeto Islamic Passport, articulação com lideranças religiosas, documentação oficial e coordenação técnica das frentes de desenvolvimento fullstack, embarcados e AIoT."
+whatsapp: "+55 85 98520-5490"
 social:
   - label: "LinkedIn"
     url: "https://www.linkedin.com/in/carlosdelfino"
