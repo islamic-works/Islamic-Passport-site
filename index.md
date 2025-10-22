@@ -25,7 +25,8 @@ title: Islamic Passport
       <p>Acompanhe novidades do ecossistema Islamic Passport.</p>
     </div>
     <div class="grid">
-      {% assign latest_news = site.news | sort: 'date' | reverse %}
+      {% assign published_news = site.news | where_exp: "item", "item.date <= site.time" %}
+      {% assign latest_news = published_news | sort: 'date' | reverse %}
       {% for item in latest_news limit:3 %}
         <article class="card">
           <h3><a href="{{ item.url | relative_url }}">{{ item.title }}</a></h3>
