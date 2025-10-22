@@ -41,10 +41,17 @@
           {% if page.email %}
             <p><strong>E-mail:</strong> <a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
           {% endif %}
-          {% if page.whatsapp %}
-            <p><strong>WhatsApp:</strong> <a href="https://wa.me/{{ page.whatsapp | replace: '+', '' | replace: ' ', '' }}" target="_blank" rel="noopener">{{ page.whatsapp }}</a></p>
-          {% elsif page.whatsapp_note %}
-            <p><strong>WhatsApp:</strong> {{ page.whatsapp_note }}</p>
+          {% capture whatsapp_number %}{{ page.whatsapp | default: page.whatsapp_note }}{% endcapture %}
+          {% assign whatsapp_number = whatsapp_number | strip %}
+          {% if whatsapp_number != '' %}
+            {% assign cleaned_whatsapp = whatsapp_number | replace: '+', '' | replace: '(', '' | replace: ')', '' | replace: ' ', '' | replace: '-', '' %}
+            <p><strong>WhatsApp:</strong>
+              {% if cleaned_whatsapp != '' %}
+                <a href="https://wa.me/{{ cleaned_whatsapp }}" target="_blank" rel="noopener">{{ whatsapp_number }}</a>
+              {% else %}
+                {{ whatsapp_number }}
+              {% endif %}
+            </p>
           {% endif %}
         </section>
 
