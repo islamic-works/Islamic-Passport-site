@@ -2,6 +2,14 @@
 title: "Kick-off do Islamic Passport"
 date: 2025-10-22
 summary: "Anunciamos a fase de planejamento, captação e banco de talentos do Islamic Passport."
+seo_title: "Kick-off Islamic Passport | Planejamento e Captação"
+description: "Anunciamos o kick-off do Islamic Passport: planejamento estratégico, captação de recursos e construção do banco de talentos com ética e segurança islâmica."
+keywords:
+  - "kick-off Islamic Passport"
+  - "planejamento Islamic Passport"
+  - "captação Islamic Works"
+  - "banco de talentos islâmico"
+  - "blockchain islâmico"
 authors:
   - carlos-delfino
 ---

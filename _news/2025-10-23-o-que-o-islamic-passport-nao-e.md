@@ -2,6 +2,14 @@
 title: "O que o Islamic Passport não é"
 date: 2025-10-23
 summary: "Estabelecemos limites claros sobre o uso do Islamic Passport e reforçamos os pilares éticos do módulo de relacionamento."
+seo_title: "O que o Islamic Passport não é | Esclarecimentos Oficiais"
+description: "Entenda o que o Islamic Passport não é e esclareça dúvidas sobre objetivos, limites e princípios éticos que norteiam a plataforma."
+keywords:
+  - "Islamic Passport"
+  - "esclarecimentos Islamic Passport"
+  - "o que não é Islamic Passport"
+  - "ética islâmica"
+  - "confiança digital"
 authors:
   - carlos-delfino
 ---

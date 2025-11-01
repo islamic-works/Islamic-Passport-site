@@ -1,7 +1,14 @@
 ---
 layout: default
 title: Vagas
-description: Oportunidades abertas para profissionais interessados em atuar no Islamic Passport.
+seo_title: Vagas no Islamic Passport | Oportunidades e Captação de Talentos
+description: "Descubra oportunidades abertas no Islamic Passport e envie seu currículo para integrar a construção do ecossistema de confiança islâmico."
+keywords:
+  - "vagas Islamic Passport"
+  - "trabalhe no Islamic Passport"
+  - "oportunidades Islamic Works"
+  - "carreira blockchain islâmico"
+  - "captação de talentos islâmicos"
 menu_header: Vagas
 ---
 

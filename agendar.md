@@ -1,10 +1,18 @@
 ---
 layout: default
 title: Agendar Encontros
-description: Solicite horários dedicados com a equipe Islamic Works para alinhamentos e reuniões.
+seo_title: Agendar Encontros | Reuniões com a Equipe Islamic Works
+description: "Solicite horários dedicados com a equipe Islamic Works para alinhar projetos, apresentações e suportes do Islamic Passport."
+keywords:
+  - "agendar Islamic Works"
+  - "reunião Islamic Passport"
+  - "agenda comunidade islâmica"
+  - "consultoria Islamic Passport"
+  - "encontros Islamic Works"
 permalink: /agendar/
 menu_header: Agendar
 submenu_header: Agenda
+canonical: "/agendar/"
 ---
 
 <section class="section">

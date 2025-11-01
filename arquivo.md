@@ -1,6 +1,14 @@
 ---
 layout: default
 title: Arquivo de Publicações
+seo_title: Arquivo Islamic Passport | Notícias, Lançamentos e Entidades
+description: "Explore o histórico completo de notícias, lançamentos e entidades reconhecidas pelo Islamic Passport."
+keywords:
+  - "arquivo Islamic Passport"
+  - "histórico noticias islâmicas"
+  - "lançamentos Islamic Passport"
+  - "entidades islamic passport"
+  - "repositório comunidade islâmica"
 permalink: /arquivo/
 ---
 

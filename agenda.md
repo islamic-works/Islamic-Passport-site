@@ -1,7 +1,14 @@
 ---
 layout: default
 title: Agenda Islamic Works
-description: Agenda consolidada dos projetos Islamic Works com eventos da comunidade.
+seo_title: Agenda Islamic Works | Eventos e Atividades Oficiais
+description: "Confira a agenda Islamic Works com eventos, lançamentos e encontros do Islamic Passport e projetos parceiros."
+keywords:
+  - "agenda Islamic Works"
+  - "eventos Islamic Passport"
+  - "calendário comunidade islâmica"
+  - "agenda mulçumana"
+  - "projetos Islamic Works"
 permalink: /agenda/
 menu_header: Agenda
 ---

@@ -2,6 +2,14 @@
 title: "Anúncio do Islamic Passport"
 date: 2025-10-01
 summary: "Conheça a proposta do protocolo oficial de identificação para a comunidade islâmica."
+seo_title: "Anúncio do Islamic Passport | Protocolo Oficial de Identificação"
+description: "Apresentamos o Islamic Passport, o protocolo de identificação que conecta muçulmanos e entidades reconhecidas com confiança, segurança e observância da ética islâmica."
+keywords:
+  - "Islamic Passport"
+  - "protocolo de identificação islâmica"
+  - "blockchain islâmico"
+  - "confiança comunitária"
+  - "hifz al-ird"
 authors:
   - carlos-delfino
 ---

@@ -3,6 +3,14 @@ subtitle: "Sistema de Identificação e Autenticação de Mulçumanos e Entidade
 description: >-
   Plataforma oficial de identificação e autenticação para a comunidade islâmica global,
   promovendo conexões seguras entre fiéis e entidades reconhecidas.
+keywords:
+  - "Islamic Passport"
+  - "identidade digital islâmica"
+  - "blockchain islâmico"
+  - "confiança mútua"
+  - "ética islâmica"
+social_image: "/imgs/logo-mark-square-512.png"
+robots: "index,follow"
 url: ""
 baseurl: ""
 permalink: pretty
@@ -29,28 +37,38 @@ collections:
 defaults:
   - scope:
       path: ""
+    values:
+      image: "/imgs/logo-mark-square-512.png"
+      og_type: "website"
+      twitter_card: "summary_large_image"
+  - scope:
+      path: ""
       type: "news"
     values:
       layout: item
       section_title: "Notícias"
+      og_type: "article"
   - scope:
       path: ""
       type: "releases"
     values:
       layout: item
       section_title: "Lançamentos"
+      og_type: "article"
   - scope:
       path: ""
       type: "entities"
     values:
       layout: item
       section_title: "Entidades"
+      og_type: "article"
   - scope:
       path: ""
       type: "staff"
     values:
       layout: author
       section_title: "Equipe"
+      og_type: "profile"
 plugins:
   - jekyll-feed
 feed:

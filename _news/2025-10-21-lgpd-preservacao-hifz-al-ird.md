@@ -2,6 +2,14 @@
 title: "LGPD e o compromisso do Islamic Passport com a preservação da honra"
 date: 2025-10-21
 summary: "Como a Lei Geral de Proteção de Dados orienta nossos processos para resguardar a dignidade e a confiança da comunidade islâmica."
+seo_title: "LGPD e ḥifẓ al-ʿird | Proteção de Dados no Islamic Passport"
+description: "Entenda como o Islamic Passport aplica a LGPD para proteger a honra (ḥifẓ al-ʿird), garantir transparência e fortalecer a confiança digital da comunidade islâmica."
+keywords:
+  - "LGPD Islamic Passport"
+  - "proteção de dados islâmica"
+  - "ḥifẓ al-ʿird"
+  - "confiança digital"
+  - "governança de dados halal"
 authors:
   - carlos-delfino
 ---

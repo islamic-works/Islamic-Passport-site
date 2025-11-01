@@ -1,6 +1,14 @@
 ---
 layout: default
 title: Islamic Passport
+seo_title: Islamic Passport | Identidade Digital Islâmica Confiável
+description: "Conheça o Islamic Passport: plataforma de identidade digital islâmica com validação descentralizada, confiança mútua e governança ética alinhada à Sharīʿah."
+keywords:
+  - "Islamic Passport"
+  - "identidade digital islâmica"
+  - "blockchain islâmico"
+  - "confiança mútua"
+  - "ética islâmica"
 ---
 
 <section class="hero">

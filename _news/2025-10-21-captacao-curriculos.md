@@ -2,6 +2,14 @@
 title: "Captação de currículos para o Islamic Passport"
 date: 2025-10-21
 summary: "Estamos recebendo candidaturas para mapear salários e pretensões profissionais de futuros colaboradores do Islamic Passport."
+seo_title: "Captação de Currículos Islamic Passport | Construindo o Time"
+description: "Abrimos captação de currículos para mapear profissionais interessados em colaborar com o Islamic Passport, fortalecendo o ecossistema de confiança islâmico."
+keywords:
+  - "captação de currículos Islamic Passport"
+  - "vagas Islamic Works"
+  - "trabalhe no Islamic Passport"
+  - "talentos blockchain islâmico"
+  - "recrutamento comunidade islâmica"
 authors:
   - carlos-delfino
 ---

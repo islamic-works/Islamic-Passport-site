@@ -2,6 +2,14 @@
 title: "Glossário popular do Islamic Passport"
 date: 2025-10-22
 summary: "Traduzimos o glossário oficial do Islamic Passport para uma linguagem acessível a quem está chegando agora."
+seo_title: "Glossário Islamic Passport | Termos Explicados em Linguagem Simples"
+description: "Conheça o glossário popular do Islamic Passport, com explicações em linguagem acessível sobre conceitos de blockchain, identidade digital islâmica e governança comunitária."
+keywords:
+  - "glossário Islamic Passport"
+  - "termos blockchain islâmico"
+  - "identidade digital islâmica"
+  - "glossário comunidade islâmica"
+  - "educação Islamic Passport"
 authors:
   - carlos-delfino
 ---
