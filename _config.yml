@@ -16,6 +16,8 @@ baseurl: ""
 permalink: pretty
 lang: pt-BR
 timezone: America/Fortaleza
+atom_feed:
+  path: atom.xml
 markdown: kramdown
 kramdown:
   input: GFM
@@ -71,6 +73,20 @@ defaults:
       og_type: "profile"
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate
+
 feed:
   path: feed.xml
-exclude: ["_site", "_config.yml", "Gemfile", "Gemfile.lock", ".gitignore", ".github"]  
+
+sitemap:
+  filename: sitemap.xml
+  exclude:
+    - gemfiles
+    - node_modules
+
+paginate: 7
+paginate_path: "/page/:num"
+
+exclude: ["_site", "Gemfile", "Gemfile.lock", "node_modules", ".gitignore", ".github"]
