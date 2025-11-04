@@ -3,6 +3,10 @@ source "https://rubygems.org"
 gem "jekyll", "~> 4.3"
 gem "jekyll-feed", "~> 0.17"
 gem "jekyll-sitemap", "~> 1.4"
+gem "jekyll-seo-tag", "~> 2.6"
+gem "jekyll-paginate", "~> 1.1"
+gem "jekyll-include-cache", "~> 0.2"
+gem "jekyll-archives", "~> 2.2"
 
 group :development do
   gem "webrick", "~> 1.8"
